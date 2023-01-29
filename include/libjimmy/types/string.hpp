@@ -1,16 +1,19 @@
 #pragma once
 
 
+
 #include <algorithm>
 #include <string>
 
 
+
 /***********************************************************************************************************************************
-* libjimmy namespace
+* libjimmy::types namespace
 ***********************************************************************************************************************************/
-namespace libjimmy {
-	
-	
+namespace libjimmy::types {
+
+		
+		
 	/*******************************************************************************************************************************
 	* String class
 	*
@@ -231,7 +234,7 @@ namespace libjimmy {
 			* Return bool
 			*   true if the substring is present in this string, false otherwise
 			***********************************************************************************************************************/
-			bool has(String substr) {
+			bool has(const String& substr) {
 				return (this->find(substr) != std::string::npos);
 			}
 			
@@ -377,7 +380,8 @@ namespace libjimmy {
 			
 			
 	};
-	
-	
+		
+		
+
 }
 
