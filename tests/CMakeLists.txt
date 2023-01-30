@@ -25,3 +25,7 @@ add_test(character_tests character_test)
 add_executable(bool_test bool_test.cpp)
 target_link_libraries(bool_test PRIVATE GTest::GTest)
 add_test(bool_tests bool_test)
+
+add_executable(types_test types_test.cpp)
+target_link_libraries(types_test PRIVATE GTest::GTest)
+add_test(types_tests types_test)

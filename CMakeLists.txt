@@ -1,5 +1,5 @@
 cmake_minimum_required (VERSION 3.0)
-project (libjimmy-cpp-types VERSION 0.0.2)
+project (libjimmy-cpp-types VERSION 0.0.3)
 
 set (CMAKE_CXX_STANDARD 17)
 
@@ -13,6 +13,7 @@ add_subdirectory(tests)
 
 SET(CPACK_GENERATOR "DEB")
 SET(CPACK_PACKAGE_NAME "libjimmy-cpp-types-dev")
+set(CPACK_DEBIAN_PACKAGE_ARCHITECTURE "all")
 SET(CPACK_SYSTEM_NAME "all")
 SET(CPACK_DEBIAN_PACKAGE_MAINTAINER "Jimmy Devine")
 INCLUDE(CPack)
