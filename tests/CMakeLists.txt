@@ -26,6 +26,14 @@ add_executable(bool_test bool_test.cpp)
 target_link_libraries(bool_test PRIVATE GTest::GTest)
 add_test(bool_tests bool_test)
 
+add_executable(array_test array_test.cpp)
+target_link_libraries(array_test PRIVATE GTest::GTest)
+add_test(array_tests array_test)
+
+add_executable(object_test object_test.cpp)
+target_link_libraries(object_test PRIVATE GTest::GTest)
+add_test(object_tests object_test)
+
 add_executable(types_test types_test.cpp)
 target_link_libraries(types_test PRIVATE GTest::GTest)
 add_test(types_tests types_test)
