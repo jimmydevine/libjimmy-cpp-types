@@ -661,6 +661,2440 @@ namespace libjimmy::types {
 			
 			
 			/***********************************************************************************************************************
+			* operator<(const String& lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LT string comparison
+			*
+			* Return bool
+			*   true if the string representation of lhs < the string representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator<(const String& lhs, const String& rhs) {
+				return lhs.compare(rhs) < 0;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<(const String& lhs, const signed char rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LT signed char comparison
+			*
+			* Return bool
+			*   true if the signed char representation of lhs < the signed char rhs
+			***********************************************************************************************************************/
+			friend bool operator<(const String& lhs, const signed char rhs) {
+				return (signed char)lhs < rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<(const signed char lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LT signed char comparison
+			*
+			* Return bool
+			*   true if the signed char lhs < the signed char representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator<(const signed char lhs, const String& rhs) {
+				return lhs < (signed char)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<(const String& lhs, const unsigned char rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LT unsigned char comparison
+			*
+			* Return bool
+			*   true if the unsigned char representation of lhs < the unsigned char rhs
+			***********************************************************************************************************************/
+			friend bool operator<(const String& lhs, const unsigned char rhs) {
+				return (unsigned char)lhs < rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<(const unsigned char lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LT unsigned char comparison
+			*
+			* Return bool
+			*   true if the unsigned char lhs < the unsigned char representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator<(const unsigned char lhs, const String& rhs) {
+				return lhs < (unsigned char)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<(const String& lhs, const signed short rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LT signed short comparison
+			*
+			* Return bool
+			*   true if the signed short representation of lhs < the signed short rhs
+			***********************************************************************************************************************/
+			friend bool operator<(const String& lhs, const signed short rhs) {
+				return (signed short)lhs < rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<(const signed short lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LT signed short comparison
+			*
+			* Return bool
+			*   true if the signed short lhs < the signed short representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator<(const signed short lhs, const String& rhs) {
+				return lhs < (signed short)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<(const String& lhs, const unsigned short rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LT unsigned short comparison
+			*
+			* Return bool
+			*   true if the unsigned short representation of lhs < the unsigned short rhs
+			***********************************************************************************************************************/
+			friend bool operator<(const String& lhs, const unsigned short rhs) {
+				return (unsigned short)lhs < rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<(const unsigned short lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LT unsigned short comparison
+			*
+			* Return bool
+			*   true if the unsigned short lhs < the unsigned short representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator<(const unsigned short lhs, const String& rhs) {
+				return lhs < (unsigned short)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<(const String& lhs, const signed long rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LT signed long comparison
+			*
+			* Return bool
+			*   true if the signed long representation of lhs < the signed long rhs
+			***********************************************************************************************************************/
+			friend bool operator<(const String& lhs, const signed long rhs) {
+				return (signed long)lhs < rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<(const signed long lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LT signed long comparison
+			*
+			* Return bool
+			*   true if the signed long lhs < the signed long representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator<(const signed long lhs, const String& rhs) {
+				return lhs < (signed long)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<(const String& lhs, const unsigned long rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LT unsigned long comparison
+			*
+			* Return bool
+			*   true if the unsigned long representation of lhs < the unsigned long rhs
+			***********************************************************************************************************************/
+			friend bool operator<(const String& lhs, const unsigned long rhs) {
+				return (unsigned long)lhs < rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<(const unsigned long lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LT unsigned long comparison
+			*
+			* Return bool
+			*   true if the unsigned long lhs < the unsigned long representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator<(const unsigned long lhs, const String& rhs) {
+				return lhs < (unsigned long)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<(const String& lhs, const signed int rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LT signed int comparison
+			*
+			* Return bool
+			*   true if the signed int representation of lhs < the signed int rhs
+			***********************************************************************************************************************/
+			friend bool operator<(const String& lhs, const signed int rhs) {
+				return (signed int)lhs < rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<(const signed int lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LT signed int comparison
+			*
+			* Return bool
+			*   true if the signed int lhs < the signed int representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator<(const signed int lhs, const String& rhs) {
+				return lhs < (signed int)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<(const String& lhs, const unsigned int rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LT unsigned int comparison
+			*
+			* Return bool
+			*   true if the unsigned int representation of lhs < the unsigned int rhs
+			***********************************************************************************************************************/
+			friend bool operator<(const String& lhs, const unsigned int rhs) {
+				return (unsigned int)lhs < rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<(const unsigned int lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LT unsigned int comparison
+			*
+			* Return bool
+			*   true if the unsigned int lhs < the unsigned int representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator<(const unsigned int lhs, const String& rhs) {
+				return lhs < (unsigned int)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<(const String& lhs, const signed long long rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LT signed long long comparison
+			*
+			* Return bool
+			*   true if the signed long long representation of lhs < the signed long long rhs
+			***********************************************************************************************************************/
+			friend bool operator<(const String& lhs, const signed long long rhs) {
+				return (signed long long)lhs < rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<(const signed long long lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LT signed long long comparison
+			*
+			* Return bool
+			*   true if the signed long long lhs < the signed long long representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator<(const signed long long lhs, const String& rhs) {
+				return lhs < (signed long long)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<(const String& lhs, const unsigned long long rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LT unsigned long long comparison
+			*
+			* Return bool
+			*   true if the unsigned long long representation of lhs < the unsigned long long rhs
+			***********************************************************************************************************************/
+			friend bool operator<(const String& lhs, const unsigned long long rhs) {
+				return (unsigned long long)lhs < rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<(const unsigned long long lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LT unsigned long long comparison
+			*
+			* Return bool
+			*   true if the unsigned long long lhs < the unsigned long long representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator<(const unsigned long long lhs, const String& rhs) {
+				return lhs < (unsigned long long)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<(const String& lhs, const float rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LT float comparison
+			*
+			* Return bool
+			*   true if the float representation of lhs < the float rhs
+			***********************************************************************************************************************/
+			friend bool operator<(const String& lhs, const float rhs) {
+				return (float)lhs < rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<(const float lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LT float comparison
+			*
+			* Return bool
+			*   true if the float lhs < the float representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator<(const float lhs, const String& rhs) {
+				return lhs < (float)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<(const String& lhs, const double rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LT double comparison
+			*
+			* Return bool
+			*   true if the double representation of lhs < the double rhs
+			***********************************************************************************************************************/
+			friend bool operator<(const String& lhs, const double rhs) {
+				return (double)lhs < rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<(const double lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LT double comparison
+			*
+			* Return bool
+			*   true if the double lhs < the double representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator<(const double lhs, const String& rhs) {
+				return lhs < (double)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<(const String& lhs, const long double rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LT long double comparison
+			*
+			* Return bool
+			*   true if the long double representation of lhs < the long double rhs
+			***********************************************************************************************************************/
+			friend bool operator<(const String& lhs, const long double rhs) {
+				return (long double)lhs < rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<(const long double lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LT long double comparison
+			*
+			* Return bool
+			*   true if the long double lhs < the long double representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator<(const long double lhs, const String& rhs) {
+				return lhs < (long double)rhs;
+			}
+			
+			
+			
+			/***********************************************************************************************************************
+			* operator<=(const String& lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LTE string comparison
+			*
+			* Return bool
+			*   true if the string representation of lhs <= the string representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator<=(const String& lhs, const String& rhs) {
+				return lhs.compare(rhs) <= 0;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<=(const String& lhs, const signed char rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LTE signed char comparison
+			*
+			* Return bool
+			*   true if the signed char representation of lhs <= the signed char rhs
+			***********************************************************************************************************************/
+			friend bool operator<=(const String& lhs, const signed char rhs) {
+				return (signed char)lhs <= rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<=(const signed char lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LTE signed char comparison
+			*
+			* Return bool
+			*   true if the signed char lhs <= the signed char representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator<=(const signed char lhs, const String& rhs) {
+				return lhs <= (signed char)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<=(const String& lhs, const unsigned char rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LTE unsigned char comparison
+			*
+			* Return bool
+			*   true if the unsigned char representation of lhs <= the unsigned char rhs
+			***********************************************************************************************************************/
+			friend bool operator<=(const String& lhs, const unsigned char rhs) {
+				return (unsigned char)lhs <= rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<=(const unsigned char lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LTE unsigned char comparison
+			*
+			* Return bool
+			*   true if the unsigned char lhs <= the unsigned char representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator<=(const unsigned char lhs, const String& rhs) {
+				return lhs <= (unsigned char)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<=(const String& lhs, const signed short rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LTE signed short comparison
+			*
+			* Return bool
+			*   true if the signed short representation of lhs <= the signed short rhs
+			***********************************************************************************************************************/
+			friend bool operator<=(const String& lhs, const signed short rhs) {
+				return (signed short)lhs <= rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<=(const signed short lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LTE signed short comparison
+			*
+			* Return bool
+			*   true if the signed short lhs <= the signed short representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator<=(const signed short lhs, const String& rhs) {
+				return lhs <= (signed short)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<=(const String& lhs, const unsigned short rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LTE unsigned short comparison
+			*
+			* Return bool
+			*   true if the unsigned short representation of lhs <= the unsigned short rhs
+			***********************************************************************************************************************/
+			friend bool operator<=(const String& lhs, const unsigned short rhs) {
+				return (unsigned short)lhs <= rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<=(const unsigned short lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LTE unsigned short comparison
+			*
+			* Return bool
+			*   true if the unsigned short lhs <= the unsigned short representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator<=(const unsigned short lhs, const String& rhs) {
+				return lhs <= (unsigned short)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<=(const String& lhs, const signed long rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LTE signed long comparison
+			*
+			* Return bool
+			*   true if the signed long representation of lhs <= the signed long rhs
+			***********************************************************************************************************************/
+			friend bool operator<=(const String& lhs, const signed long rhs) {
+				return (signed long)lhs <= rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<=(const signed long lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LTE signed long comparison
+			*
+			* Return bool
+			*   true if the signed long lhs <= the signed long representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator<=(const signed long lhs, const String& rhs) {
+				return lhs <= (signed long)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<=(const String& lhs, const unsigned long rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LTE unsigned long comparison
+			*
+			* Return bool
+			*   true if the unsigned long representation of lhs <= the unsigned long rhs
+			***********************************************************************************************************************/
+			friend bool operator<=(const String& lhs, const unsigned long rhs) {
+				return (unsigned long)lhs <= rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<=(const unsigned long lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LTE unsigned long comparison
+			*
+			* Return bool
+			*   true if the unsigned long lhs <= the unsigned long representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator<=(const unsigned long lhs, const String& rhs) {
+				return lhs <= (unsigned long)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<=(const String& lhs, const signed int rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LTE signed int comparison
+			*
+			* Return bool
+			*   true if the signed int representation of lhs <= the signed int rhs
+			***********************************************************************************************************************/
+			friend bool operator<=(const String& lhs, const signed int rhs) {
+				return (signed int)lhs <= rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<=(const signed int lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LTE signed int comparison
+			*
+			* Return bool
+			*   true if the signed int lhs <= the signed int representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator<=(const signed int lhs, const String& rhs) {
+				return lhs <= (signed int)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<=(const String& lhs, const unsigned int rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LTE unsigned int comparison
+			*
+			* Return bool
+			*   true if the unsigned int representation of lhs <= the unsigned int rhs
+			***********************************************************************************************************************/
+			friend bool operator<=(const String& lhs, const unsigned int rhs) {
+				return (unsigned int)lhs <= rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<=(const unsigned int lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LTE unsigned int comparison
+			*
+			* Return bool
+			*   true if the unsigned int lhs <= the unsigned int representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator<=(const unsigned int lhs, const String& rhs) {
+				return lhs <= (unsigned int)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<=(const String& lhs, const signed long long rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LTE signed long long comparison
+			*
+			* Return bool
+			*   true if the signed long long representation of lhs <= the signed long long rhs
+			***********************************************************************************************************************/
+			friend bool operator<=(const String& lhs, const signed long long rhs) {
+				return (signed long long)lhs <= rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<=(const signed long long lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LTE signed long long comparison
+			*
+			* Return bool
+			*   true if the signed long long lhs <= the signed long long representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator<=(const signed long long lhs, const String& rhs) {
+				return lhs <= (signed long long)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<=(const String& lhs, const unsigned long long rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LTE unsigned long long comparison
+			*
+			* Return bool
+			*   true if the unsigned long long representation of lhs <= the unsigned long long rhs
+			***********************************************************************************************************************/
+			friend bool operator<=(const String& lhs, const unsigned long long rhs) {
+				return (unsigned long long)lhs <= rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<=(const unsigned long long lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LTE unsigned long long comparison
+			*
+			* Return bool
+			*   true if the unsigned long long lhs <= the unsigned long long representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator<=(const unsigned long long lhs, const String& rhs) {
+				return lhs <= (unsigned long long)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<=(const String& lhs, const float rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LTE float comparison
+			*
+			* Return bool
+			*   true if the float representation of lhs <= the float rhs
+			***********************************************************************************************************************/
+			friend bool operator<=(const String& lhs, const float rhs) {
+				return (float)lhs <= rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<=(const float lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LTE float comparison
+			*
+			* Return bool
+			*   true if the float lhs <= the float representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator<=(const float lhs, const String& rhs) {
+				return lhs <= (float)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<=(const String& lhs, const double rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LTE double comparison
+			*
+			* Return bool
+			*   true if the double representation of lhs <= the double rhs
+			***********************************************************************************************************************/
+			friend bool operator<=(const String& lhs, const double rhs) {
+				return (double)lhs <= rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<=(const double lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LTE double comparison
+			*
+			* Return bool
+			*   true if the double lhs < the double representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator<=(const double lhs, const String& rhs) {
+				return lhs <= (double)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<=(const String& lhs, const long double rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LTE long double comparison
+			*
+			* Return bool
+			*   true if the long double representation of lhs < the long double rhs
+			***********************************************************************************************************************/
+			friend bool operator<=(const String& lhs, const long double rhs) {
+				return (long double)lhs <= rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator<=(const long double lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a LTE long double comparison
+			*
+			* Return bool
+			*   true if the long double lhs < the long double representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator<=(const long double lhs, const String& rhs) {
+				return lhs <= (long double)rhs;
+			}
+			
+			
+			
+			/***********************************************************************************************************************
+			* operator>(const String& lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GT string comparison
+			*
+			* Return bool
+			*   true if the string representation of lhs > the string representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator>(const String& lhs, const String& rhs) {
+				return lhs.compare(rhs) > 0;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>(const String& lhs, const signed char rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GT signed char comparison
+			*
+			* Return bool
+			*   true if the signed char representation of lhs > the signed char rhs
+			***********************************************************************************************************************/
+			friend bool operator>(const String& lhs, const signed char rhs) {
+				return (signed char)lhs > rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>(const signed char lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GT signed char comparison
+			*
+			* Return bool
+			*   true if the signed char lhs > the signed char representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator>(const signed char lhs, const String& rhs) {
+				return lhs > (signed char)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>(const String& lhs, const unsigned char rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GT unsigned char comparison
+			*
+			* Return bool
+			*   true if the unsigned char representation of lhs > the unsigned char rhs
+			***********************************************************************************************************************/
+			friend bool operator>(const String& lhs, const unsigned char rhs) {
+				return (unsigned char)lhs > rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>(const unsigned char lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GT unsigned char comparison
+			*
+			* Return bool
+			*   true if the unsigned char lhs > the unsigned char representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator>(const unsigned char lhs, const String& rhs) {
+				return lhs > (unsigned char)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>(const String& lhs, const signed short rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GT signed short comparison
+			*
+			* Return bool
+			*   true if the signed short representation of lhs > the signed short rhs
+			***********************************************************************************************************************/
+			friend bool operator>(const String& lhs, const signed short rhs) {
+				return (signed short)lhs > rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>(const signed short lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GT signed short comparison
+			*
+			* Return bool
+			*   true if the signed short lhs > the signed short representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator>(const signed short lhs, const String& rhs) {
+				return lhs > (signed short)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>(const String& lhs, const unsigned short rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GT unsigned short comparison
+			*
+			* Return bool
+			*   true if the unsigned short representation of lhs > the unsigned short rhs
+			***********************************************************************************************************************/
+			friend bool operator>(const String& lhs, const unsigned short rhs) {
+				return (unsigned short)lhs > rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>(const unsigned short lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GT unsigned short comparison
+			*
+			* Return bool
+			*   true if the unsigned short lhs > the unsigned short representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator>(const unsigned short lhs, const String& rhs) {
+				return lhs > (unsigned short)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>(const String& lhs, const signed long rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GT signed long comparison
+			*
+			* Return bool
+			*   true if the signed long representation of lhs > the signed long rhs
+			***********************************************************************************************************************/
+			friend bool operator>(const String& lhs, const signed long rhs) {
+				return (signed long)lhs > rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>(const signed long lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GT signed long comparison
+			*
+			* Return bool
+			*   true if the signed long lhs > the signed long representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator>(const signed long lhs, const String& rhs) {
+				return lhs > (signed long)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>(const String& lhs, const unsigned long rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GT unsigned long comparison
+			*
+			* Return bool
+			*   true if the unsigned long representation of lhs > the unsigned long rhs
+			***********************************************************************************************************************/
+			friend bool operator>(const String& lhs, const unsigned long rhs) {
+				return (unsigned long)lhs > rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>(const unsigned long lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GT unsigned long comparison
+			*
+			* Return bool
+			*   true if the unsigned long lhs > the unsigned long representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator>(const unsigned long lhs, const String& rhs) {
+				return lhs > (unsigned long)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>(const String& lhs, const signed int rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GT signed int comparison
+			*
+			* Return bool
+			*   true if the signed int representation of lhs > the signed int rhs
+			***********************************************************************************************************************/
+			friend bool operator>(const String& lhs, const signed int rhs) {
+				return (signed int)lhs > rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>(const signed int lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GT signed int comparison
+			*
+			* Return bool
+			*   true if the signed int lhs > the signed int representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator>(const signed int lhs, const String& rhs) {
+				return lhs > (signed int)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>(const String& lhs, const unsigned int rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GT unsigned int comparison
+			*
+			* Return bool
+			*   true if the unsigned int representation of lhs > the unsigned int rhs
+			***********************************************************************************************************************/
+			friend bool operator>(const String& lhs, const unsigned int rhs) {
+				return (unsigned int)lhs > rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>(const unsigned int lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GT unsigned int comparison
+			*
+			* Return bool
+			*   true if the unsigned int lhs > the unsigned int representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator>(const unsigned int lhs, const String& rhs) {
+				return lhs > (unsigned int)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>(const String& lhs, const signed long long rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GT signed long long comparison
+			*
+			* Return bool
+			*   true if the signed long long representation of lhs > the signed long long rhs
+			***********************************************************************************************************************/
+			friend bool operator>(const String& lhs, const signed long long rhs) {
+				return (signed long long)lhs > rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>(const signed long long lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GT signed long long comparison
+			*
+			* Return bool
+			*   true if the signed long long lhs > the signed long long representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator>(const signed long long lhs, const String& rhs) {
+				return lhs > (signed long long)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>(const String& lhs, const unsigned long long rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GT unsigned long long comparison
+			*
+			* Return bool
+			*   true if the unsigned long long representation of lhs > the unsigned long long rhs
+			***********************************************************************************************************************/
+			friend bool operator>(const String& lhs, const unsigned long long rhs) {
+				return (unsigned long long)lhs > rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>(const unsigned long long lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GT unsigned long long comparison
+			*
+			* Return bool
+			*   true if the unsigned long long lhs > the unsigned long long representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator>(const unsigned long long lhs, const String& rhs) {
+				return lhs > (unsigned long long)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>(const String& lhs, const float rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GT float comparison
+			*
+			* Return bool
+			*   true if the float representation of lhs > the float rhs
+			***********************************************************************************************************************/
+			friend bool operator>(const String& lhs, const float rhs) {
+				return (float)lhs > rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>(const float lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GT float comparison
+			*
+			* Return bool
+			*   true if the float lhs > the float representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator>(const float lhs, const String& rhs) {
+				return lhs > (float)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>(const String& lhs, const double rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GT double comparison
+			*
+			* Return bool
+			*   true if the double representation of lhs > the double rhs
+			***********************************************************************************************************************/
+			friend bool operator>(const String& lhs, const double rhs) {
+				return (double)lhs > rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>(const double lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GT double comparison
+			*
+			* Return bool
+			*   true if the double lhs > the double representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator>(const double lhs, const String& rhs) {
+				return lhs > (double)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>(const String& lhs, const long double rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GT long double comparison
+			*
+			* Return bool
+			*   true if the long double representation of lhs > the long double rhs
+			***********************************************************************************************************************/
+			friend bool operator>(const String& lhs, const long double rhs) {
+				return (long double)lhs > rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>(const long double lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GT long double comparison
+			*
+			* Return bool
+			*   true if the long double lhs > the long double representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator>(const long double lhs, const String& rhs) {
+				return lhs > (long double)rhs;
+			}
+			
+			
+			
+			/***********************************************************************************************************************
+			* operator>=(const String& lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GTE string comparison
+			*
+			* Return bool
+			*   true if the string representation of lhs >= the string representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator>=(const String& lhs, const String& rhs) {
+				return lhs.compare(rhs) >= 0;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>=(const String& lhs, const signed char rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GTE signed char comparison
+			*
+			* Return bool
+			*   true if the signed char representation of lhs >= the signed char rhs
+			***********************************************************************************************************************/
+			friend bool operator>=(const String& lhs, const signed char rhs) {
+				return (signed char)lhs >= rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>=(const signed char lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GTE signed char comparison
+			*
+			* Return bool
+			*   true if the signed char lhs >= the signed char representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator>=(const signed char lhs, const String& rhs) {
+				return lhs >= (signed char)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>=(const String& lhs, const unsigned char rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GTE unsigned char comparison
+			*
+			* Return bool
+			*   true if the unsigned char representation of lhs >= the unsigned char rhs
+			***********************************************************************************************************************/
+			friend bool operator>=(const String& lhs, const unsigned char rhs) {
+				return (unsigned char)lhs >= rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>=(const unsigned char lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GTE unsigned char comparison
+			*
+			* Return bool
+			*   true if the unsigned char lhs >= the unsigned char representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator>=(const unsigned char lhs, const String& rhs) {
+				return lhs >= (unsigned char)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>=(const String& lhs, const signed short rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GTE signed short comparison
+			*
+			* Return bool
+			*   true if the signed short representation of lhs >= the signed short rhs
+			***********************************************************************************************************************/
+			friend bool operator>=(const String& lhs, const signed short rhs) {
+				return (signed short)lhs >= rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>=(const signed short lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GTE signed short comparison
+			*
+			* Return bool
+			*   true if the signed short lhs >= the signed short representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator>=(const signed short lhs, const String& rhs) {
+				return lhs >= (signed short)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>=(const String& lhs, const unsigned short rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GTE unsigned short comparison
+			*
+			* Return bool
+			*   true if the unsigned short representation of lhs >= the unsigned short rhs
+			***********************************************************************************************************************/
+			friend bool operator>=(const String& lhs, const unsigned short rhs) {
+				return (unsigned short)lhs >= rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>=(const unsigned short lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GTE unsigned short comparison
+			*
+			* Return bool
+			*   true if the unsigned short lhs >= the unsigned short representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator>=(const unsigned short lhs, const String& rhs) {
+				return lhs >= (unsigned short)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>=(const String& lhs, const signed long rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GTE signed long comparison
+			*
+			* Return bool
+			*   true if the signed long representation of lhs >= the signed long rhs
+			***********************************************************************************************************************/
+			friend bool operator>=(const String& lhs, const signed long rhs) {
+				return (signed long)lhs >= rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>=(const signed long lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GTE signed long comparison
+			*
+			* Return bool
+			*   true if the signed long lhs >= the signed long representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator>=(const signed long lhs, const String& rhs) {
+				return lhs >= (signed long)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>=(const String& lhs, const unsigned long rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GTE unsigned long comparison
+			*
+			* Return bool
+			*   true if the unsigned long representation of lhs >= the unsigned long rhs
+			***********************************************************************************************************************/
+			friend bool operator>=(const String& lhs, const unsigned long rhs) {
+				return (unsigned long)lhs >= rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>=(const unsigned long lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GTE unsigned long comparison
+			*
+			* Return bool
+			*   true if the unsigned long lhs >= the unsigned long representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator>=(const unsigned long lhs, const String& rhs) {
+				return lhs >= (unsigned long)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>=(const String& lhs, const signed int rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GTE signed int comparison
+			*
+			* Return bool
+			*   true if the signed int representation of lhs >= the signed int rhs
+			***********************************************************************************************************************/
+			friend bool operator>=(const String& lhs, const signed int rhs) {
+				return (signed int)lhs >= rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>=(const signed int lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GTE signed int comparison
+			*
+			* Return bool
+			*   true if the signed int lhs >= the signed int representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator>=(const signed int lhs, const String& rhs) {
+				return lhs >= (signed int)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>=(const String& lhs, const unsigned int rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GTE unsigned int comparison
+			*
+			* Return bool
+			*   true if the unsigned int representation of lhs >= the unsigned int rhs
+			***********************************************************************************************************************/
+			friend bool operator>=(const String& lhs, const unsigned int rhs) {
+				return (unsigned int)lhs >= rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>=(const unsigned int lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GTE unsigned int comparison
+			*
+			* Return bool
+			*   true if the unsigned int lhs >= the unsigned int representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator>=(const unsigned int lhs, const String& rhs) {
+				return lhs >= (unsigned int)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>=(const String& lhs, const signed long long rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GTE signed long long comparison
+			*
+			* Return bool
+			*   true if the signed long long representation of lhs >= the signed long long rhs
+			***********************************************************************************************************************/
+			friend bool operator>=(const String& lhs, const signed long long rhs) {
+				return (signed long long)lhs >= rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>=(const signed long long lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GTE signed long long comparison
+			*
+			* Return bool
+			*   true if the signed long long lhs >= the signed long long representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator>=(const signed long long lhs, const String& rhs) {
+				return lhs >= (signed long long)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>=(const String& lhs, const unsigned long long rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GTE unsigned long long comparison
+			*
+			* Return bool
+			*   true if the unsigned long long representation of lhs >= the unsigned long long rhs
+			***********************************************************************************************************************/
+			friend bool operator>=(const String& lhs, const unsigned long long rhs) {
+				return (unsigned long long)lhs >= rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>=(const unsigned long long lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GTE unsigned long long comparison
+			*
+			* Return bool
+			*   true if the unsigned long long lhs >= the unsigned long long representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator>=(const unsigned long long lhs, const String& rhs) {
+				return lhs >= (unsigned long long)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>=(const String& lhs, const float rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GTE float comparison
+			*
+			* Return bool
+			*   true if the float representation of lhs >= the float rhs
+			***********************************************************************************************************************/
+			friend bool operator>=(const String& lhs, const float rhs) {
+				return (float)lhs >= rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>=(const float lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GTE float comparison
+			*
+			* Return bool
+			*   true if the float lhs >= the float representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator>=(const float lhs, const String& rhs) {
+				return lhs >= (float)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>=(const String& lhs, const double rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GTE double comparison
+			*
+			* Return bool
+			*   true if the double representation of lhs >= the double rhs
+			***********************************************************************************************************************/
+			friend bool operator>=(const String& lhs, const double rhs) {
+				return (double)lhs >= rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>=(const double lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GTE double comparison
+			*
+			* Return bool
+			*   true if the double lhs >= the double representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator>=(const double lhs, const String& rhs) {
+				return lhs >= (double)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>=(const String& lhs, const long double rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GTE long double comparison
+			*
+			* Return bool
+			*   true if the long double representation of lhs >= the long double rhs
+			***********************************************************************************************************************/
+			friend bool operator>=(const String& lhs, const long double rhs) {
+				return (long double)lhs >= rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator>=(const long double lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a GTE long double comparison
+			*
+			* Return bool
+			*   true if the long double lhs >= the long double representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator>=(const long double lhs, const String& rhs) {
+				return lhs >= (long double)rhs;
+			}
+			
+			
+			
+			/***********************************************************************************************************************
+			* operator==(const String& lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a EQ string comparison
+			*
+			* Return bool
+			*   true if the string representation of lhs == the string representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator==(const String& lhs, const String& rhs) {
+				return lhs.compare(rhs) == 0;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator==(const String& lhs, const signed char rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a EQ signed char comparison
+			*
+			* Return bool
+			*   true if the signed char representation of lhs == the signed char rhs
+			***********************************************************************************************************************/
+			friend bool operator==(const String& lhs, const signed char rhs) {
+				return (signed char)lhs == rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator==(const signed char lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a EQ signed char comparison
+			*
+			* Return bool
+			*   true if the signed char lhs == the signed char representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator==(const signed char lhs, const String& rhs) {
+				return lhs == (signed char)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator==(const String& lhs, const unsigned char rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a EQ unsigned char comparison
+			*
+			* Return bool
+			*   true if the unsigned char representation of lhs == the unsigned char rhs
+			***********************************************************************************************************************/
+			friend bool operator==(const String& lhs, const unsigned char rhs) {
+				return (unsigned char)lhs == rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator==(const unsigned char lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a EQ unsigned char comparison
+			*
+			* Return bool
+			*   true if the unsigned char lhs == the unsigned char representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator==(const unsigned char lhs, const String& rhs) {
+				return lhs == (unsigned char)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator==(const String& lhs, const signed short rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a EQ signed short comparison
+			*
+			* Return bool
+			*   true if the signed short representation of lhs == the signed short rhs
+			***********************************************************************************************************************/
+			friend bool operator==(const String& lhs, const signed short rhs) {
+				return (signed short)lhs == rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator==(const signed short lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a EQ signed short comparison
+			*
+			* Return bool
+			*   true if the signed short lhs == the signed short representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator==(const signed short lhs, const String& rhs) {
+				return lhs == (signed short)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator==(const String& lhs, const unsigned short rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a EQ unsigned short comparison
+			*
+			* Return bool
+			*   true if the unsigned short representation of lhs == the unsigned short rhs
+			***********************************************************************************************************************/
+			friend bool operator==(const String& lhs, const unsigned short rhs) {
+				return (unsigned short)lhs == rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator==(const unsigned short lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a EQ unsigned short comparison
+			*
+			* Return bool
+			*   true if the unsigned short lhs == the unsigned short representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator==(const unsigned short lhs, const String& rhs) {
+				return lhs == (unsigned short)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator==(const String& lhs, const signed long rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a EQ signed long comparison
+			*
+			* Return bool
+			*   true if the signed long representation of lhs == the signed long rhs
+			***********************************************************************************************************************/
+			friend bool operator==(const String& lhs, const signed long rhs) {
+				return (signed long)lhs == rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator==(const signed long lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a EQ signed long comparison
+			*
+			* Return bool
+			*   true if the signed long lhs == the signed long representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator==(const signed long lhs, const String& rhs) {
+				return lhs == (signed long)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator==(const String& lhs, const unsigned long rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a EQ unsigned long comparison
+			*
+			* Return bool
+			*   true if the unsigned long representation of lhs == the unsigned long rhs
+			***********************************************************************************************************************/
+			friend bool operator==(const String& lhs, const unsigned long rhs) {
+				return (unsigned long)lhs == rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator==(const unsigned long lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a EQ unsigned long comparison
+			*
+			* Return bool
+			*   true if the unsigned long lhs == the unsigned long representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator==(const unsigned long lhs, const String& rhs) {
+				return lhs == (unsigned long)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator==(const String& lhs, const signed int rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a EQ signed int comparison
+			*
+			* Return bool
+			*   true if the signed int representation of lhs == the signed int rhs
+			***********************************************************************************************************************/
+			friend bool operator==(const String& lhs, const signed int rhs) {
+				return (signed int)lhs == rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator==(const signed int lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a EQ signed int comparison
+			*
+			* Return bool
+			*   true if the signed int lhs == the signed int representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator==(const signed int lhs, const String& rhs) {
+				return lhs == (signed int)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator==(const String& lhs, const unsigned int rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a EQ unsigned int comparison
+			*
+			* Return bool
+			*   true if the unsigned int representation of lhs == the unsigned int rhs
+			***********************************************************************************************************************/
+			friend bool operator==(const String& lhs, const unsigned int rhs) {
+				return (unsigned int)lhs == rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator==(const unsigned int lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a EQ unsigned int comparison
+			*
+			* Return bool
+			*   true if the unsigned int lhs == the unsigned int representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator==(const unsigned int lhs, const String& rhs) {
+				return lhs == (unsigned int)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator==(const String& lhs, const signed long long rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a EQ signed long long comparison
+			*
+			* Return bool
+			*   true if the signed long long representation of lhs == the signed long long rhs
+			***********************************************************************************************************************/
+			friend bool operator==(const String& lhs, const signed long long rhs) {
+				return (signed long long)lhs == rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator==(const signed long long lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a EQ signed long long comparison
+			*
+			* Return bool
+			*   true if the signed long long lhs == the signed long long representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator==(const signed long long lhs, const String& rhs) {
+				return lhs == (signed long long)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator==(const String& lhs, const unsigned long long rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a EQ unsigned long long comparison
+			*
+			* Return bool
+			*   true if the unsigned long long representation of lhs == the unsigned long long rhs
+			***********************************************************************************************************************/
+			friend bool operator==(const String& lhs, const unsigned long long rhs) {
+				return (unsigned long long)lhs == rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator==(const unsigned long long lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a EQ unsigned long long comparison
+			*
+			* Return bool
+			*   true if the unsigned long long lhs == the unsigned long long representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator==(const unsigned long long lhs, const String& rhs) {
+				return lhs == (unsigned long long)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator==(const String& lhs, const float rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a EQ float comparison
+			*
+			* Return bool
+			*   true if the float representation of lhs == the float rhs
+			***********************************************************************************************************************/
+			friend bool operator==(const String& lhs, const float rhs) {
+				return (float)lhs == rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator==(const float lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a EQ float comparison
+			*
+			* Return bool
+			*   true if the float lhs == the float representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator==(const float lhs, const String& rhs) {
+				return lhs == (float)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator==(const String& lhs, const double rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a EQ double comparison
+			*
+			* Return bool
+			*   true if the double representation of lhs == the double rhs
+			***********************************************************************************************************************/
+			friend bool operator==(const String& lhs, const double rhs) {
+				return (double)lhs == rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator==(const double lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a EQ double comparison
+			*
+			* Return bool
+			*   true if the double lhs == the double representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator==(const double lhs, const String& rhs) {
+				return lhs == (double)rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator==(const String& lhs, const long double rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a EQ long double comparison
+			*
+			* Return bool
+			*   true if the long double representation of lhs == the long double rhs
+			***********************************************************************************************************************/
+			friend bool operator==(const String& lhs, const long double rhs) {
+				return (long double)lhs == rhs;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator==(const long double lhs, const String& rhs)
+			*
+			* Arguments
+			*   lhs : Left side of the comparison
+			*   rhs : Right side of the comparison
+			*
+			* Description
+			*   Performs a EQ long double comparison
+			*
+			* Return bool
+			*   true if the long double lhs == the long double representation of rhs
+			***********************************************************************************************************************/
+			friend bool operator==(const long double lhs, const String& rhs) {
+				return lhs == (long double)rhs;
+			}
+	
+	
+			/***********************************************************************************************************************
 			* minimizeFloatPrecision()
 			*
 			* Arguments
@@ -823,7 +3257,7 @@ namespace libjimmy::types {
 			bool isdecimal() {
 				char *p = nullptr;
 				
-				if (this->trim() == "")
+				if (this->trim().empty())
 				{
 					return false;
 				}
@@ -852,7 +3286,7 @@ namespace libjimmy::types {
 			bool isfloat() {
 				char *p = nullptr;
 				
-				if (this->trim() == "")
+				if (this->trim().empty())
 				{
 					return false;
 				}
@@ -885,2442 +3319,12 @@ namespace libjimmy::types {
 			}
 			
 			
+			
 	};
 	
 	
 	
-	/*******************************************************************************************************************************
-	* operator<(const String& lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LT string comparison
-	*
-	* Return bool
-	*   true if the string representation of lhs < the string representation of rhs
-	*******************************************************************************************************************************/
-	bool operator<(const String& lhs, const String& rhs) {
-		return lhs.compare(rhs) < 0;
-	}
 	
-	
-	/*******************************************************************************************************************************
-	* operator<(const String& lhs, const signed char rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LT signed char comparison
-	*
-	* Return bool
-	*   true if the signed char representation of lhs < the signed char rhs
-	*******************************************************************************************************************************/
-	bool operator<(const String& lhs, const signed char rhs) {
-		return (signed char)lhs < rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<(const signed char lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LT signed char comparison
-	*
-	* Return bool
-	*   true if the signed char lhs < the signed char representation of rhs
-	*******************************************************************************************************************************/
-	bool operator<(const signed char lhs, const String& rhs) {
-		return lhs < (signed char)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<(const String& lhs, const unsigned char rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LT unsigned char comparison
-	*
-	* Return bool
-	*   true if the unsigned char representation of lhs < the unsigned char rhs
-	*******************************************************************************************************************************/
-	bool operator<(const String& lhs, const unsigned char rhs) {
-		return (unsigned char)lhs < rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<(const unsigned char lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LT unsigned char comparison
-	*
-	* Return bool
-	*   true if the unsigned char lhs < the unsigned char representation of rhs
-	*******************************************************************************************************************************/
-	bool operator<(const unsigned char lhs, const String& rhs) {
-		return lhs < (unsigned char)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<(const String& lhs, const signed short rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LT signed short comparison
-	*
-	* Return bool
-	*   true if the signed short representation of lhs < the signed short rhs
-	*******************************************************************************************************************************/
-	bool operator<(const String& lhs, const signed short rhs) {
-		return (signed short)lhs < rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<(const signed short lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LT signed short comparison
-	*
-	* Return bool
-	*   true if the signed short lhs < the signed short representation of rhs
-	*******************************************************************************************************************************/
-	bool operator<(const signed short lhs, const String& rhs) {
-		return lhs < (signed short)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<(const String& lhs, const unsigned short rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LT unsigned short comparison
-	*
-	* Return bool
-	*   true if the unsigned short representation of lhs < the unsigned short rhs
-	*******************************************************************************************************************************/
-	bool operator<(const String& lhs, const unsigned short rhs) {
-		return (unsigned short)lhs < rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<(const unsigned short lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LT unsigned short comparison
-	*
-	* Return bool
-	*   true if the unsigned short lhs < the unsigned short representation of rhs
-	*******************************************************************************************************************************/
-	bool operator<(const unsigned short lhs, const String& rhs) {
-		return lhs < (unsigned short)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<(const String& lhs, const signed long rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LT signed long comparison
-	*
-	* Return bool
-	*   true if the signed long representation of lhs < the signed long rhs
-	*******************************************************************************************************************************/
-	bool operator<(const String& lhs, const signed long rhs) {
-		return (signed long)lhs < rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<(const signed long lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LT signed long comparison
-	*
-	* Return bool
-	*   true if the signed long lhs < the signed long representation of rhs
-	*******************************************************************************************************************************/
-	bool operator<(const signed long lhs, const String& rhs) {
-		return lhs < (signed long)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<(const String& lhs, const unsigned long rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LT unsigned long comparison
-	*
-	* Return bool
-	*   true if the unsigned long representation of lhs < the unsigned long rhs
-	*******************************************************************************************************************************/
-	bool operator<(const String& lhs, const unsigned long rhs) {
-		return (unsigned long)lhs < rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<(const unsigned long lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LT unsigned long comparison
-	*
-	* Return bool
-	*   true if the unsigned long lhs < the unsigned long representation of rhs
-	*******************************************************************************************************************************/
-	bool operator<(const unsigned long lhs, const String& rhs) {
-		return lhs < (unsigned long)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<(const String& lhs, const signed int rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LT signed int comparison
-	*
-	* Return bool
-	*   true if the signed int representation of lhs < the signed int rhs
-	*******************************************************************************************************************************/
-	bool operator<(const String& lhs, const signed int rhs) {
-		return (signed int)lhs < rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<(const signed int lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LT signed int comparison
-	*
-	* Return bool
-	*   true if the signed int lhs < the signed int representation of rhs
-	*******************************************************************************************************************************/
-	bool operator<(const signed int lhs, const String& rhs) {
-		return lhs < (signed int)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<(const String& lhs, const unsigned int rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LT unsigned int comparison
-	*
-	* Return bool
-	*   true if the unsigned int representation of lhs < the unsigned int rhs
-	*******************************************************************************************************************************/
-	bool operator<(const String& lhs, const unsigned int rhs) {
-		return (unsigned int)lhs < rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<(const unsigned int lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LT unsigned int comparison
-	*
-	* Return bool
-	*   true if the unsigned int lhs < the unsigned int representation of rhs
-	*******************************************************************************************************************************/
-	bool operator<(const unsigned int lhs, const String& rhs) {
-		return lhs < (unsigned int)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<(const String& lhs, const signed long long rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LT signed long long comparison
-	*
-	* Return bool
-	*   true if the signed long long representation of lhs < the signed long long rhs
-	*******************************************************************************************************************************/
-	bool operator<(const String& lhs, const signed long long rhs) {
-		return (signed long long)lhs < rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<(const signed long long lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LT signed long long comparison
-	*
-	* Return bool
-	*   true if the signed long long lhs < the signed long long representation of rhs
-	*******************************************************************************************************************************/
-	bool operator<(const signed long long lhs, const String& rhs) {
-		return lhs < (signed long long)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<(const String& lhs, const unsigned long long rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LT unsigned long long comparison
-	*
-	* Return bool
-	*   true if the unsigned long long representation of lhs < the unsigned long long rhs
-	*******************************************************************************************************************************/
-	bool operator<(const String& lhs, const unsigned long long rhs) {
-		return (unsigned long long)lhs < rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<(const unsigned long long lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LT unsigned long long comparison
-	*
-	* Return bool
-	*   true if the unsigned long long lhs < the unsigned long long representation of rhs
-	*******************************************************************************************************************************/
-	bool operator<(const unsigned long long lhs, const String& rhs) {
-		return lhs < (unsigned long long)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<(const String& lhs, const float rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LT float comparison
-	*
-	* Return bool
-	*   true if the float representation of lhs < the float rhs
-	*******************************************************************************************************************************/
-	bool operator<(const String& lhs, const float rhs) {
-		return (float)lhs < rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<(const float lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LT float comparison
-	*
-	* Return bool
-	*   true if the float lhs < the float representation of rhs
-	*******************************************************************************************************************************/
-	bool operator<(const float lhs, const String& rhs) {
-		return lhs < (float)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<(const String& lhs, const double rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LT double comparison
-	*
-	* Return bool
-	*   true if the double representation of lhs < the double rhs
-	*******************************************************************************************************************************/
-	bool operator<(const String& lhs, const double rhs) {
-		return (double)lhs < rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<(const double lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LT double comparison
-	*
-	* Return bool
-	*   true if the double lhs < the double representation of rhs
-	*******************************************************************************************************************************/
-	bool operator<(const double lhs, const String& rhs) {
-		return lhs < (double)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<(const String& lhs, const long double rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LT long double comparison
-	*
-	* Return bool
-	*   true if the long double representation of lhs < the long double rhs
-	*******************************************************************************************************************************/
-	bool operator<(const String& lhs, const long double rhs) {
-		return (long double)lhs < rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<(const long double lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LT long double comparison
-	*
-	* Return bool
-	*   true if the long double lhs < the long double representation of rhs
-	*******************************************************************************************************************************/
-	bool operator<(const long double lhs, const String& rhs) {
-		return lhs < (long double)rhs;
-	}
-	
-	
-	
-	/*******************************************************************************************************************************
-	* operator<=(const String& lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LTE string comparison
-	*
-	* Return bool
-	*   true if the string representation of lhs <= the string representation of rhs
-	*******************************************************************************************************************************/
-	bool operator<=(const String& lhs, const String& rhs) {
-		return lhs.compare(rhs) <= 0;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<=(const String& lhs, const signed char rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LTE signed char comparison
-	*
-	* Return bool
-	*   true if the signed char representation of lhs <= the signed char rhs
-	*******************************************************************************************************************************/
-	bool operator<=(const String& lhs, const signed char rhs) {
-		return (signed char)lhs <= rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<=(const signed char lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LTE signed char comparison
-	*
-	* Return bool
-	*   true if the signed char lhs <= the signed char representation of rhs
-	*******************************************************************************************************************************/
-	bool operator<=(const signed char lhs, const String& rhs) {
-		return lhs <= (signed char)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<=(const String& lhs, const unsigned char rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LTE unsigned char comparison
-	*
-	* Return bool
-	*   true if the unsigned char representation of lhs <= the unsigned char rhs
-	*******************************************************************************************************************************/
-	bool operator<=(const String& lhs, const unsigned char rhs) {
-		return (unsigned char)lhs <= rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<=(const unsigned char lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LTE unsigned char comparison
-	*
-	* Return bool
-	*   true if the unsigned char lhs <= the unsigned char representation of rhs
-	*******************************************************************************************************************************/
-	bool operator<=(const unsigned char lhs, const String& rhs) {
-		return lhs <= (unsigned char)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<=(const String& lhs, const signed short rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LTE signed short comparison
-	*
-	* Return bool
-	*   true if the signed short representation of lhs <= the signed short rhs
-	*******************************************************************************************************************************/
-	bool operator<=(const String& lhs, const signed short rhs) {
-		return (signed short)lhs <= rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<=(const signed short lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LTE signed short comparison
-	*
-	* Return bool
-	*   true if the signed short lhs <= the signed short representation of rhs
-	*******************************************************************************************************************************/
-	bool operator<=(const signed short lhs, const String& rhs) {
-		return lhs <= (signed short)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<=(const String& lhs, const unsigned short rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LTE unsigned short comparison
-	*
-	* Return bool
-	*   true if the unsigned short representation of lhs <= the unsigned short rhs
-	*******************************************************************************************************************************/
-	bool operator<=(const String& lhs, const unsigned short rhs) {
-		return (unsigned short)lhs <= rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<=(const unsigned short lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LTE unsigned short comparison
-	*
-	* Return bool
-	*   true if the unsigned short lhs <= the unsigned short representation of rhs
-	*******************************************************************************************************************************/
-	bool operator<=(const unsigned short lhs, const String& rhs) {
-		return lhs <= (unsigned short)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<=(const String& lhs, const signed long rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LTE signed long comparison
-	*
-	* Return bool
-	*   true if the signed long representation of lhs <= the signed long rhs
-	*******************************************************************************************************************************/
-	bool operator<=(const String& lhs, const signed long rhs) {
-		return (signed long)lhs <= rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<=(const signed long lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LTE signed long comparison
-	*
-	* Return bool
-	*   true if the signed long lhs <= the signed long representation of rhs
-	*******************************************************************************************************************************/
-	bool operator<=(const signed long lhs, const String& rhs) {
-		return lhs <= (signed long)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<=(const String& lhs, const unsigned long rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LTE unsigned long comparison
-	*
-	* Return bool
-	*   true if the unsigned long representation of lhs <= the unsigned long rhs
-	*******************************************************************************************************************************/
-	bool operator<=(const String& lhs, const unsigned long rhs) {
-		return (unsigned long)lhs <= rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<=(const unsigned long lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LTE unsigned long comparison
-	*
-	* Return bool
-	*   true if the unsigned long lhs <= the unsigned long representation of rhs
-	*******************************************************************************************************************************/
-	bool operator<=(const unsigned long lhs, const String& rhs) {
-		return lhs <= (unsigned long)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<=(const String& lhs, const signed int rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LTE signed int comparison
-	*
-	* Return bool
-	*   true if the signed int representation of lhs <= the signed int rhs
-	*******************************************************************************************************************************/
-	bool operator<=(const String& lhs, const signed int rhs) {
-		return (signed int)lhs <= rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<=(const signed int lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LTE signed int comparison
-	*
-	* Return bool
-	*   true if the signed int lhs <= the signed int representation of rhs
-	*******************************************************************************************************************************/
-	bool operator<=(const signed int lhs, const String& rhs) {
-		return lhs <= (signed int)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<=(const String& lhs, const unsigned int rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LTE unsigned int comparison
-	*
-	* Return bool
-	*   true if the unsigned int representation of lhs <= the unsigned int rhs
-	*******************************************************************************************************************************/
-	bool operator<=(const String& lhs, const unsigned int rhs) {
-		return (unsigned int)lhs <= rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<=(const unsigned int lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LTE unsigned int comparison
-	*
-	* Return bool
-	*   true if the unsigned int lhs <= the unsigned int representation of rhs
-	*******************************************************************************************************************************/
-	bool operator<=(const unsigned int lhs, const String& rhs) {
-		return lhs <= (unsigned int)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<=(const String& lhs, const signed long long rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LTE signed long long comparison
-	*
-	* Return bool
-	*   true if the signed long long representation of lhs <= the signed long long rhs
-	*******************************************************************************************************************************/
-	bool operator<=(const String& lhs, const signed long long rhs) {
-		return (signed long long)lhs <= rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<=(const signed long long lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LTE signed long long comparison
-	*
-	* Return bool
-	*   true if the signed long long lhs <= the signed long long representation of rhs
-	*******************************************************************************************************************************/
-	bool operator<=(const signed long long lhs, const String& rhs) {
-		return lhs <= (signed long long)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<=(const String& lhs, const unsigned long long rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LTE unsigned long long comparison
-	*
-	* Return bool
-	*   true if the unsigned long long representation of lhs <= the unsigned long long rhs
-	*******************************************************************************************************************************/
-	bool operator<=(const String& lhs, const unsigned long long rhs) {
-		return (unsigned long long)lhs <= rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<=(const unsigned long long lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LTE unsigned long long comparison
-	*
-	* Return bool
-	*   true if the unsigned long long lhs <= the unsigned long long representation of rhs
-	*******************************************************************************************************************************/
-	bool operator<=(const unsigned long long lhs, const String& rhs) {
-		return lhs <= (unsigned long long)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<=(const String& lhs, const float rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LTE float comparison
-	*
-	* Return bool
-	*   true if the float representation of lhs <= the float rhs
-	*******************************************************************************************************************************/
-	bool operator<=(const String& lhs, const float rhs) {
-		return (float)lhs <= rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<=(const float lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LTE float comparison
-	*
-	* Return bool
-	*   true if the float lhs <= the float representation of rhs
-	*******************************************************************************************************************************/
-	bool operator<=(const float lhs, const String& rhs) {
-		return lhs <= (float)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<=(const String& lhs, const double rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LTE double comparison
-	*
-	* Return bool
-	*   true if the double representation of lhs <= the double rhs
-	*******************************************************************************************************************************/
-	bool operator<=(const String& lhs, const double rhs) {
-		return (double)lhs <= rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<=(const double lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LTE double comparison
-	*
-	* Return bool
-	*   true if the double lhs < the double representation of rhs
-	*******************************************************************************************************************************/
-	bool operator<=(const double lhs, const String& rhs) {
-		return lhs <= (double)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<=(const String& lhs, const long double rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LTE long double comparison
-	*
-	* Return bool
-	*   true if the long double representation of lhs < the long double rhs
-	*******************************************************************************************************************************/
-	bool operator<=(const String& lhs, const long double rhs) {
-		return (long double)lhs <= rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator<=(const long double lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a LTE long double comparison
-	*
-	* Return bool
-	*   true if the long double lhs < the long double representation of rhs
-	*******************************************************************************************************************************/
-	bool operator<=(const long double lhs, const String& rhs) {
-		return lhs <= (long double)rhs;
-	}
-	
-	
-	
-	/*******************************************************************************************************************************
-	* operator>(const String& lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GT string comparison
-	*
-	* Return bool
-	*   true if the string representation of lhs > the string representation of rhs
-	*******************************************************************************************************************************/
-	bool operator>(const String& lhs, const String& rhs) {
-		return lhs.compare(rhs) > 0;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>(const String& lhs, const signed char rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GT signed char comparison
-	*
-	* Return bool
-	*   true if the signed char representation of lhs > the signed char rhs
-	*******************************************************************************************************************************/
-	bool operator>(const String& lhs, const signed char rhs) {
-		return (signed char)lhs > rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>(const signed char lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GT signed char comparison
-	*
-	* Return bool
-	*   true if the signed char lhs > the signed char representation of rhs
-	*******************************************************************************************************************************/
-	bool operator>(const signed char lhs, const String& rhs) {
-		return lhs > (signed char)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>(const String& lhs, const unsigned char rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GT unsigned char comparison
-	*
-	* Return bool
-	*   true if the unsigned char representation of lhs > the unsigned char rhs
-	*******************************************************************************************************************************/
-	bool operator>(const String& lhs, const unsigned char rhs) {
-		return (unsigned char)lhs > rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>(const unsigned char lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GT unsigned char comparison
-	*
-	* Return bool
-	*   true if the unsigned char lhs > the unsigned char representation of rhs
-	*******************************************************************************************************************************/
-	bool operator>(const unsigned char lhs, const String& rhs) {
-		return lhs > (unsigned char)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>(const String& lhs, const signed short rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GT signed short comparison
-	*
-	* Return bool
-	*   true if the signed short representation of lhs > the signed short rhs
-	*******************************************************************************************************************************/
-	bool operator>(const String& lhs, const signed short rhs) {
-		return (signed short)lhs > rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>(const signed short lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GT signed short comparison
-	*
-	* Return bool
-	*   true if the signed short lhs > the signed short representation of rhs
-	*******************************************************************************************************************************/
-	bool operator>(const signed short lhs, const String& rhs) {
-		return lhs > (signed short)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>(const String& lhs, const unsigned short rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GT unsigned short comparison
-	*
-	* Return bool
-	*   true if the unsigned short representation of lhs > the unsigned short rhs
-	*******************************************************************************************************************************/
-	bool operator>(const String& lhs, const unsigned short rhs) {
-		return (unsigned short)lhs > rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>(const unsigned short lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GT unsigned short comparison
-	*
-	* Return bool
-	*   true if the unsigned short lhs > the unsigned short representation of rhs
-	*******************************************************************************************************************************/
-	bool operator>(const unsigned short lhs, const String& rhs) {
-		return lhs > (unsigned short)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>(const String& lhs, const signed long rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GT signed long comparison
-	*
-	* Return bool
-	*   true if the signed long representation of lhs > the signed long rhs
-	*******************************************************************************************************************************/
-	bool operator>(const String& lhs, const signed long rhs) {
-		return (signed long)lhs > rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>(const signed long lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GT signed long comparison
-	*
-	* Return bool
-	*   true if the signed long lhs > the signed long representation of rhs
-	*******************************************************************************************************************************/
-	bool operator>(const signed long lhs, const String& rhs) {
-		return lhs > (signed long)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>(const String& lhs, const unsigned long rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GT unsigned long comparison
-	*
-	* Return bool
-	*   true if the unsigned long representation of lhs > the unsigned long rhs
-	*******************************************************************************************************************************/
-	bool operator>(const String& lhs, const unsigned long rhs) {
-		return (unsigned long)lhs > rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>(const unsigned long lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GT unsigned long comparison
-	*
-	* Return bool
-	*   true if the unsigned long lhs > the unsigned long representation of rhs
-	*******************************************************************************************************************************/
-	bool operator>(const unsigned long lhs, const String& rhs) {
-		return lhs > (unsigned long)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>(const String& lhs, const signed int rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GT signed int comparison
-	*
-	* Return bool
-	*   true if the signed int representation of lhs > the signed int rhs
-	*******************************************************************************************************************************/
-	bool operator>(const String& lhs, const signed int rhs) {
-		return (signed int)lhs > rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>(const signed int lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GT signed int comparison
-	*
-	* Return bool
-	*   true if the signed int lhs > the signed int representation of rhs
-	*******************************************************************************************************************************/
-	bool operator>(const signed int lhs, const String& rhs) {
-		return lhs > (signed int)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>(const String& lhs, const unsigned int rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GT unsigned int comparison
-	*
-	* Return bool
-	*   true if the unsigned int representation of lhs > the unsigned int rhs
-	*******************************************************************************************************************************/
-	bool operator>(const String& lhs, const unsigned int rhs) {
-		return (unsigned int)lhs > rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>(const unsigned int lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GT unsigned int comparison
-	*
-	* Return bool
-	*   true if the unsigned int lhs > the unsigned int representation of rhs
-	*******************************************************************************************************************************/
-	bool operator>(const unsigned int lhs, const String& rhs) {
-		return lhs > (unsigned int)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>(const String& lhs, const signed long long rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GT signed long long comparison
-	*
-	* Return bool
-	*   true if the signed long long representation of lhs > the signed long long rhs
-	*******************************************************************************************************************************/
-	bool operator>(const String& lhs, const signed long long rhs) {
-		return (signed long long)lhs > rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>(const signed long long lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GT signed long long comparison
-	*
-	* Return bool
-	*   true if the signed long long lhs > the signed long long representation of rhs
-	*******************************************************************************************************************************/
-	bool operator>(const signed long long lhs, const String& rhs) {
-		return lhs > (signed long long)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>(const String& lhs, const unsigned long long rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GT unsigned long long comparison
-	*
-	* Return bool
-	*   true if the unsigned long long representation of lhs > the unsigned long long rhs
-	*******************************************************************************************************************************/
-	bool operator>(const String& lhs, const unsigned long long rhs) {
-		return (unsigned long long)lhs > rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>(const unsigned long long lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GT unsigned long long comparison
-	*
-	* Return bool
-	*   true if the unsigned long long lhs > the unsigned long long representation of rhs
-	*******************************************************************************************************************************/
-	bool operator>(const unsigned long long lhs, const String& rhs) {
-		return lhs > (unsigned long long)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>(const String& lhs, const float rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GT float comparison
-	*
-	* Return bool
-	*   true if the float representation of lhs > the float rhs
-	*******************************************************************************************************************************/
-	bool operator>(const String& lhs, const float rhs) {
-		return (float)lhs > rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>(const float lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GT float comparison
-	*
-	* Return bool
-	*   true if the float lhs > the float representation of rhs
-	*******************************************************************************************************************************/
-	bool operator>(const float lhs, const String& rhs) {
-		return lhs > (float)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>(const String& lhs, const double rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GT double comparison
-	*
-	* Return bool
-	*   true if the double representation of lhs > the double rhs
-	*******************************************************************************************************************************/
-	bool operator>(const String& lhs, const double rhs) {
-		return (double)lhs > rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>(const double lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GT double comparison
-	*
-	* Return bool
-	*   true if the double lhs > the double representation of rhs
-	*******************************************************************************************************************************/
-	bool operator>(const double lhs, const String& rhs) {
-		return lhs > (double)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>(const String& lhs, const long double rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GT long double comparison
-	*
-	* Return bool
-	*   true if the long double representation of lhs > the long double rhs
-	*******************************************************************************************************************************/
-	bool operator>(const String& lhs, const long double rhs) {
-		return (long double)lhs > rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>(const long double lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GT long double comparison
-	*
-	* Return bool
-	*   true if the long double lhs > the long double representation of rhs
-	*******************************************************************************************************************************/
-	bool operator>(const long double lhs, const String& rhs) {
-		return lhs > (long double)rhs;
-	}
-	
-	
-	
-	/*******************************************************************************************************************************
-	* operator>=(const String& lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GTE string comparison
-	*
-	* Return bool
-	*   true if the string representation of lhs >= the string representation of rhs
-	*******************************************************************************************************************************/
-	bool operator>=(const String& lhs, const String& rhs) {
-		return lhs.compare(rhs) >= 0;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>=(const String& lhs, const signed char rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GTE signed char comparison
-	*
-	* Return bool
-	*   true if the signed char representation of lhs >= the signed char rhs
-	*******************************************************************************************************************************/
-	bool operator>=(const String& lhs, const signed char rhs) {
-		return (signed char)lhs >= rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>=(const signed char lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GTE signed char comparison
-	*
-	* Return bool
-	*   true if the signed char lhs >= the signed char representation of rhs
-	*******************************************************************************************************************************/
-	bool operator>=(const signed char lhs, const String& rhs) {
-		return lhs >= (signed char)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>=(const String& lhs, const unsigned char rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GTE unsigned char comparison
-	*
-	* Return bool
-	*   true if the unsigned char representation of lhs >= the unsigned char rhs
-	*******************************************************************************************************************************/
-	bool operator>=(const String& lhs, const unsigned char rhs) {
-		return (unsigned char)lhs >= rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>=(const unsigned char lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GTE unsigned char comparison
-	*
-	* Return bool
-	*   true if the unsigned char lhs >= the unsigned char representation of rhs
-	*******************************************************************************************************************************/
-	bool operator>=(const unsigned char lhs, const String& rhs) {
-		return lhs >= (unsigned char)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>=(const String& lhs, const signed short rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GTE signed short comparison
-	*
-	* Return bool
-	*   true if the signed short representation of lhs >= the signed short rhs
-	*******************************************************************************************************************************/
-	bool operator>=(const String& lhs, const signed short rhs) {
-		return (signed short)lhs >= rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>=(const signed short lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GTE signed short comparison
-	*
-	* Return bool
-	*   true if the signed short lhs >= the signed short representation of rhs
-	*******************************************************************************************************************************/
-	bool operator>=(const signed short lhs, const String& rhs) {
-		return lhs >= (signed short)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>=(const String& lhs, const unsigned short rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GTE unsigned short comparison
-	*
-	* Return bool
-	*   true if the unsigned short representation of lhs >= the unsigned short rhs
-	*******************************************************************************************************************************/
-	bool operator>=(const String& lhs, const unsigned short rhs) {
-		return (unsigned short)lhs >= rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>=(const unsigned short lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GTE unsigned short comparison
-	*
-	* Return bool
-	*   true if the unsigned short lhs >= the unsigned short representation of rhs
-	*******************************************************************************************************************************/
-	bool operator>=(const unsigned short lhs, const String& rhs) {
-		return lhs >= (unsigned short)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>=(const String& lhs, const signed long rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GTE signed long comparison
-	*
-	* Return bool
-	*   true if the signed long representation of lhs >= the signed long rhs
-	*******************************************************************************************************************************/
-	bool operator>=(const String& lhs, const signed long rhs) {
-		return (signed long)lhs >= rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>=(const signed long lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GTE signed long comparison
-	*
-	* Return bool
-	*   true if the signed long lhs >= the signed long representation of rhs
-	*******************************************************************************************************************************/
-	bool operator>=(const signed long lhs, const String& rhs) {
-		return lhs >= (signed long)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>=(const String& lhs, const unsigned long rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GTE unsigned long comparison
-	*
-	* Return bool
-	*   true if the unsigned long representation of lhs >= the unsigned long rhs
-	*******************************************************************************************************************************/
-	bool operator>=(const String& lhs, const unsigned long rhs) {
-		return (unsigned long)lhs >= rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>=(const unsigned long lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GTE unsigned long comparison
-	*
-	* Return bool
-	*   true if the unsigned long lhs >= the unsigned long representation of rhs
-	*******************************************************************************************************************************/
-	bool operator>=(const unsigned long lhs, const String& rhs) {
-		return lhs >= (unsigned long)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>=(const String& lhs, const signed int rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GTE signed int comparison
-	*
-	* Return bool
-	*   true if the signed int representation of lhs >= the signed int rhs
-	*******************************************************************************************************************************/
-	bool operator>=(const String& lhs, const signed int rhs) {
-		return (signed int)lhs >= rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>=(const signed int lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GTE signed int comparison
-	*
-	* Return bool
-	*   true if the signed int lhs >= the signed int representation of rhs
-	*******************************************************************************************************************************/
-	bool operator>=(const signed int lhs, const String& rhs) {
-		return lhs >= (signed int)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>=(const String& lhs, const unsigned int rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GTE unsigned int comparison
-	*
-	* Return bool
-	*   true if the unsigned int representation of lhs >= the unsigned int rhs
-	*******************************************************************************************************************************/
-	bool operator>=(const String& lhs, const unsigned int rhs) {
-		return (unsigned int)lhs >= rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>=(const unsigned int lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GTE unsigned int comparison
-	*
-	* Return bool
-	*   true if the unsigned int lhs >= the unsigned int representation of rhs
-	*******************************************************************************************************************************/
-	bool operator>=(const unsigned int lhs, const String& rhs) {
-		return lhs >= (unsigned int)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>=(const String& lhs, const signed long long rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GTE signed long long comparison
-	*
-	* Return bool
-	*   true if the signed long long representation of lhs >= the signed long long rhs
-	*******************************************************************************************************************************/
-	bool operator>=(const String& lhs, const signed long long rhs) {
-		return (signed long long)lhs >= rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>=(const signed long long lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GTE signed long long comparison
-	*
-	* Return bool
-	*   true if the signed long long lhs >= the signed long long representation of rhs
-	*******************************************************************************************************************************/
-	bool operator>=(const signed long long lhs, const String& rhs) {
-		return lhs >= (signed long long)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>=(const String& lhs, const unsigned long long rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GTE unsigned long long comparison
-	*
-	* Return bool
-	*   true if the unsigned long long representation of lhs >= the unsigned long long rhs
-	*******************************************************************************************************************************/
-	bool operator>=(const String& lhs, const unsigned long long rhs) {
-		return (unsigned long long)lhs >= rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>=(const unsigned long long lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GTE unsigned long long comparison
-	*
-	* Return bool
-	*   true if the unsigned long long lhs >= the unsigned long long representation of rhs
-	*******************************************************************************************************************************/
-	bool operator>=(const unsigned long long lhs, const String& rhs) {
-		return lhs >= (unsigned long long)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>=(const String& lhs, const float rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GTE float comparison
-	*
-	* Return bool
-	*   true if the float representation of lhs >= the float rhs
-	*******************************************************************************************************************************/
-	bool operator>=(const String& lhs, const float rhs) {
-		return (float)lhs >= rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>=(const float lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GTE float comparison
-	*
-	* Return bool
-	*   true if the float lhs >= the float representation of rhs
-	*******************************************************************************************************************************/
-	bool operator>=(const float lhs, const String& rhs) {
-		return lhs >= (float)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>=(const String& lhs, const double rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GTE double comparison
-	*
-	* Return bool
-	*   true if the double representation of lhs >= the double rhs
-	*******************************************************************************************************************************/
-	bool operator>=(const String& lhs, const double rhs) {
-		return (double)lhs >= rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>=(const double lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GTE double comparison
-	*
-	* Return bool
-	*   true if the double lhs >= the double representation of rhs
-	*******************************************************************************************************************************/
-	bool operator>=(const double lhs, const String& rhs) {
-		return lhs >= (double)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>=(const String& lhs, const long double rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GTE long double comparison
-	*
-	* Return bool
-	*   true if the long double representation of lhs >= the long double rhs
-	*******************************************************************************************************************************/
-	bool operator>=(const String& lhs, const long double rhs) {
-		return (long double)lhs >= rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator>=(const long double lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a GTE long double comparison
-	*
-	* Return bool
-	*   true if the long double lhs >= the long double representation of rhs
-	*******************************************************************************************************************************/
-	bool operator>=(const long double lhs, const String& rhs) {
-		return lhs >= (long double)rhs;
-	}
-	
-	
-	
-	/*******************************************************************************************************************************
-	* operator==(const String& lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a EQ string comparison
-	*
-	* Return bool
-	*   true if the string representation of lhs == the string representation of rhs
-	*******************************************************************************************************************************/
-	bool operator==(const String& lhs, const String& rhs) {
-		return lhs.compare(rhs) == 0;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator==(const String& lhs, const signed char rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a EQ signed char comparison
-	*
-	* Return bool
-	*   true if the signed char representation of lhs == the signed char rhs
-	*******************************************************************************************************************************/
-	bool operator==(const String& lhs, const signed char rhs) {
-		return (signed char)lhs == rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator==(const signed char lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a EQ signed char comparison
-	*
-	* Return bool
-	*   true if the signed char lhs == the signed char representation of rhs
-	*******************************************************************************************************************************/
-	bool operator==(const signed char lhs, const String& rhs) {
-		return lhs == (signed char)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator==(const String& lhs, const unsigned char rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a EQ unsigned char comparison
-	*
-	* Return bool
-	*   true if the unsigned char representation of lhs == the unsigned char rhs
-	*******************************************************************************************************************************/
-	bool operator==(const String& lhs, const unsigned char rhs) {
-		return (unsigned char)lhs == rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator==(const unsigned char lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a EQ unsigned char comparison
-	*
-	* Return bool
-	*   true if the unsigned char lhs == the unsigned char representation of rhs
-	*******************************************************************************************************************************/
-	bool operator==(const unsigned char lhs, const String& rhs) {
-		return lhs == (unsigned char)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator==(const String& lhs, const signed short rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a EQ signed short comparison
-	*
-	* Return bool
-	*   true if the signed short representation of lhs == the signed short rhs
-	*******************************************************************************************************************************/
-	bool operator==(const String& lhs, const signed short rhs) {
-		return (signed short)lhs == rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator==(const signed short lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a EQ signed short comparison
-	*
-	* Return bool
-	*   true if the signed short lhs == the signed short representation of rhs
-	*******************************************************************************************************************************/
-	bool operator==(const signed short lhs, const String& rhs) {
-		return lhs == (signed short)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator==(const String& lhs, const unsigned short rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a EQ unsigned short comparison
-	*
-	* Return bool
-	*   true if the unsigned short representation of lhs == the unsigned short rhs
-	*******************************************************************************************************************************/
-	bool operator==(const String& lhs, const unsigned short rhs) {
-		return (unsigned short)lhs == rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator==(const unsigned short lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a EQ unsigned short comparison
-	*
-	* Return bool
-	*   true if the unsigned short lhs == the unsigned short representation of rhs
-	*******************************************************************************************************************************/
-	bool operator==(const unsigned short lhs, const String& rhs) {
-		return lhs == (unsigned short)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator==(const String& lhs, const signed long rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a EQ signed long comparison
-	*
-	* Return bool
-	*   true if the signed long representation of lhs == the signed long rhs
-	*******************************************************************************************************************************/
-	bool operator==(const String& lhs, const signed long rhs) {
-		return (signed long)lhs == rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator==(const signed long lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a EQ signed long comparison
-	*
-	* Return bool
-	*   true if the signed long lhs == the signed long representation of rhs
-	*******************************************************************************************************************************/
-	bool operator==(const signed long lhs, const String& rhs) {
-		return lhs == (signed long)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator==(const String& lhs, const unsigned long rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a EQ unsigned long comparison
-	*
-	* Return bool
-	*   true if the unsigned long representation of lhs == the unsigned long rhs
-	*******************************************************************************************************************************/
-	bool operator==(const String& lhs, const unsigned long rhs) {
-		return (unsigned long)lhs == rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator==(const unsigned long lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a EQ unsigned long comparison
-	*
-	* Return bool
-	*   true if the unsigned long lhs == the unsigned long representation of rhs
-	*******************************************************************************************************************************/
-	bool operator==(const unsigned long lhs, const String& rhs) {
-		return lhs == (unsigned long)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator==(const String& lhs, const signed int rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a EQ signed int comparison
-	*
-	* Return bool
-	*   true if the signed int representation of lhs == the signed int rhs
-	*******************************************************************************************************************************/
-	bool operator==(const String& lhs, const signed int rhs) {
-		return (signed int)lhs == rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator==(const signed int lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a EQ signed int comparison
-	*
-	* Return bool
-	*   true if the signed int lhs == the signed int representation of rhs
-	*******************************************************************************************************************************/
-	bool operator==(const signed int lhs, const String& rhs) {
-		return lhs == (signed int)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator==(const String& lhs, const unsigned int rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a EQ unsigned int comparison
-	*
-	* Return bool
-	*   true if the unsigned int representation of lhs == the unsigned int rhs
-	*******************************************************************************************************************************/
-	bool operator==(const String& lhs, const unsigned int rhs) {
-		return (unsigned int)lhs == rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator==(const unsigned int lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a EQ unsigned int comparison
-	*
-	* Return bool
-	*   true if the unsigned int lhs == the unsigned int representation of rhs
-	*******************************************************************************************************************************/
-	bool operator==(const unsigned int lhs, const String& rhs) {
-		return lhs == (unsigned int)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator==(const String& lhs, const signed long long rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a EQ signed long long comparison
-	*
-	* Return bool
-	*   true if the signed long long representation of lhs == the signed long long rhs
-	*******************************************************************************************************************************/
-	bool operator==(const String& lhs, const signed long long rhs) {
-		return (signed long long)lhs == rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator==(const signed long long lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a EQ signed long long comparison
-	*
-	* Return bool
-	*   true if the signed long long lhs == the signed long long representation of rhs
-	*******************************************************************************************************************************/
-	bool operator==(const signed long long lhs, const String& rhs) {
-		return lhs == (signed long long)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator==(const String& lhs, const unsigned long long rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a EQ unsigned long long comparison
-	*
-	* Return bool
-	*   true if the unsigned long long representation of lhs == the unsigned long long rhs
-	*******************************************************************************************************************************/
-	bool operator==(const String& lhs, const unsigned long long rhs) {
-		return (unsigned long long)lhs == rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator==(const unsigned long long lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a EQ unsigned long long comparison
-	*
-	* Return bool
-	*   true if the unsigned long long lhs == the unsigned long long representation of rhs
-	*******************************************************************************************************************************/
-	bool operator==(const unsigned long long lhs, const String& rhs) {
-		return lhs == (unsigned long long)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator==(const String& lhs, const float rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a EQ float comparison
-	*
-	* Return bool
-	*   true if the float representation of lhs == the float rhs
-	*******************************************************************************************************************************/
-	bool operator==(const String& lhs, const float rhs) {
-		return (float)lhs == rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator==(const float lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a EQ float comparison
-	*
-	* Return bool
-	*   true if the float lhs == the float representation of rhs
-	*******************************************************************************************************************************/
-	bool operator==(const float lhs, const String& rhs) {
-		return lhs == (float)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator==(const String& lhs, const double rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a EQ double comparison
-	*
-	* Return bool
-	*   true if the double representation of lhs == the double rhs
-	*******************************************************************************************************************************/
-	bool operator==(const String& lhs, const double rhs) {
-		return (double)lhs == rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator==(const double lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a EQ double comparison
-	*
-	* Return bool
-	*   true if the double lhs == the double representation of rhs
-	*******************************************************************************************************************************/
-	bool operator==(const double lhs, const String& rhs) {
-		return lhs == (double)rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator==(const String& lhs, const long double rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a EQ long double comparison
-	*
-	* Return bool
-	*   true if the long double representation of lhs == the long double rhs
-	*******************************************************************************************************************************/
-	bool operator==(const String& lhs, const long double rhs) {
-		return (long double)lhs == rhs;
-	}
-	
-	
-	/*******************************************************************************************************************************
-	* operator==(const long double lhs, const String& rhs)
-	*
-	* Arguments
-	*   lhs : Left side of the comparison
-	*   rhs : Right side of the comparison
-	*
-	* Description
-	*   Performs a EQ long double comparison
-	*
-	* Return bool
-	*   true if the long double lhs == the long double representation of rhs
-	*******************************************************************************************************************************/
-	bool operator==(const long double lhs, const String& rhs) {
-		return lhs == (long double)rhs;
-	}
 	
 	
 
