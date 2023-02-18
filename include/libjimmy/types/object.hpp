@@ -22,8 +22,8 @@ namespace libjimmy::types {
 	* Description
 	*   Modernized wrapper around std::map
 	*******************************************************************************************************************************/
-	template <class K, class V>
-	class Object : public std::map<K, V> {
+	template <class K, class V, typename C = std::less<K>, typename A = std::allocator<std::pair<const K, V> > >
+	class Object : public std::map<K, V, C, A> {
 		public:
 			
 			

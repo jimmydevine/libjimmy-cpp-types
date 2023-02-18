@@ -32,6 +32,10 @@ namespace libjimmy::types {
 			***********************************************************************************************************************/
 			using std::list<T>::list;
 			
+			void push(const T& value)
+			{
+				this->push_back(value);
+			}
 			
 	};
 		
