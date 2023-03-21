@@ -1156,13 +1156,29 @@ TEST(StringTests, TestHasChar) {
 }
 
 TEST(StringTests, TestDecimal) {
-    String value = "value";
     ASSERT_EQ(String("5").isnumeric(), true);
 	ASSERT_EQ(String("5.1").isnumeric(), true);
 	ASSERT_EQ(String("").isnumeric(), false);
 	ASSERT_EQ(String("A").isnumeric(), false);
 }
 
+TEST(StringTests, TestReplace) {
+    String value = "this is my replace string";
+	String compare = "this is my complete string";
+    ASSERT_EQ(value.replace("replace", "complete"), compare);
+}
+
+TEST(StringTests, TestReplaceEmpty) {
+    String value = "this is my replace string";
+	String compare = "this is my  string";
+    ASSERT_EQ(value.replace("replace", ""), compare);
+}
+
+TEST(StringTests, TestReplaceMultiple) {
+    String value = "a replace b replace c replace";
+	String compare = "a complete b complete c complete";
+    ASSERT_EQ(value.replace("replace", "complete"), compare);
+}
 
 int main(int argc, char** argv) {
     ::testing::InitGoogleTest(&argc, argv);

@@ -3162,41 +3162,7 @@ namespace libjimmy::types {
 				return *this;
 			}
 			
-			
-			/***********************************************************************************************************************
-			* has(StringTemplate substr)
-			*
-			* Arguments
-			*   StringTemplate substr : Substring to search for
-			*
-			* Description
-			*   Determine if this StringTemplate contains the given substring
-			*  
-			* Return bool
-			*   true if the substring is present in this string, false otherwise
-			***********************************************************************************************************************/
-			bool has(const StringTemplate& substr) {
-				return (this->find(substr) != std::basic_string<T>::npos);
-			}
-			
-			
-			/***********************************************************************************************************************
-			* has(char chr)
-			*
-			* Arguments
-			*   chr : Character to search for
-			*
-			* Description
-			*   Determine if this StringTemplate contains the given character
-			*  
-			* Return bool
-			*   true if the character is present in this string, false otherwise
-			***********************************************************************************************************************/
-			bool has(char chr) {
-				return (this->find(chr) != std::basic_string<T>::npos);
-			}
-			
-			
+						
 			/***********************************************************************************************************************
 			* ltrim()
 			*
@@ -3243,6 +3209,64 @@ namespace libjimmy::types {
 				return this->ltrim().rtrim();
 			}
 			
+			
+			/***********************************************************************************************************************
+			* replace(StringTemplate& substr, StringTemplate& with)
+			*
+			* Arguments
+			*   StringTemplate& substr : String to search for
+			*   StringTemplate& with   : String to replace with
+			*
+			* Description
+			*   Replace substring `substr` with string `with`
+			*  
+			* Return &
+			***********************************************************************************************************************/
+			StringTemplate& replace(const StringTemplate& substr, const StringTemplate& with) {
+				size_t index = 0;
+				while (true) {
+					index = this->find(substr, index);
+					if (index == std::string::npos) break;
+					std::basic_string<T>::replace(index, substr.size(), with);
+					index += with.size();
+				}
+				return *this;
+			}
+			
+			
+			/***********************************************************************************************************************
+			* has(StringTemplate& substr)
+			*
+			* Arguments
+			*   StringTemplate& substr : Substring to search for
+			*
+			* Description
+			*   Determine if this StringTemplate contains the given substring
+			*  
+			* Return bool
+			*   true if the substring is present in this string, false otherwise
+			***********************************************************************************************************************/
+			bool has(const StringTemplate& substr) {
+				return (this->find(substr) != std::basic_string<T>::npos);
+			}
+			
+			
+			/***********************************************************************************************************************
+			* has(char chr)
+			*
+			* Arguments
+			*   chr : Character to search for
+			*
+			* Description
+			*   Determine if this StringTemplate contains the given character
+			*  
+			* Return bool
+			*   true if the character is present in this string, false otherwise
+			***********************************************************************************************************************/
+			bool has(char chr) {
+				return (this->find(chr) != std::basic_string<T>::npos);
+			}
+
 			
 			/***********************************************************************************************************************
 			* isdecimal()
