@@ -152,6 +152,16 @@ TEST(StringTests, TestValueOfCopy) {
 	ASSERT_EQ(value2, "Value2");
 }
 
+TEST(StringTests, TestSubscriptOffset) {
+    String value = "Value";
+	ASSERT_EQ(value(1), "alue");
+}
+
+TEST(StringTests, TestSubscriptDoubleOffset) {
+    String value = "Value";
+	ASSERT_EQ(value(1, -1), "alu");
+}
+
 
 TEST(StringTests, TestAssignmentFromCStringValue) {
     String value = "";

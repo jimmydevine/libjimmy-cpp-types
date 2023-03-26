@@ -193,11 +193,52 @@ namespace libjimmy::types {
 			* Description
 			*   Return a copy of the string
 			*
-			* Return StringTemplate&
+			* Return
 			*   Return a copy of the string
 			***********************************************************************************************************************/
 			StringTemplate operator*() {
 				return this->copy();
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator(int start, int end)
+			*
+			* Arguments
+			*   start : start offset
+			*   end   : end offset
+			*
+			* Description
+			*   Returns a substring given start and end positions.  Negative end position is from the end of the string
+			*
+			* Return
+			*   Return a new instance representing the substring
+			***********************************************************************************************************************/
+			StringTemplate operator()(int start, int end) {
+				if (end < 0)
+				{
+					end = this->size() + end - 1;
+				}
+				size_t size = end - start + 1;
+				return StringTemplate(this->substr(start, size));
+			}
+			
+			
+			/***********************************************************************************************************************
+			* operator(int start)
+			*
+			* Arguments
+			*   start : start offset
+			*
+			* Description
+			*   Returns a substring given start and position, copied to the end of the string
+			*
+			* Return
+			*   Return a new instance representing the substring
+			***********************************************************************************************************************/
+			StringTemplate operator()(int start) {
+				size_t size = this->size() - start;
+				return StringTemplate(this->substr(start, size));
 			}
 			
 			
