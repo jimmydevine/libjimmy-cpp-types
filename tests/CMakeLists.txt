@@ -6,6 +6,10 @@ add_executable(string_test string_test.cpp)
 target_link_libraries(string_test PRIVATE GTest::GTest)
 add_test(string_tests string_test)
 
+add_executable(stringfile_test stringfile_test.cpp)
+target_link_libraries(stringfile_test PRIVATE GTest::GTest)
+add_test(stringfile_tests stringfile_test)
+
 add_executable(float_test float_test.cpp)
 target_link_libraries(float_test PRIVATE GTest::GTest)
 add_test(float_tests float_test)
