@@ -30,10 +30,8 @@ namespace libjimmy::types {
 			
 			T read(size_t size = -1) {
 				std::ifstream stream(_filepath);
-				std::cout << _filepath << std::endl;
 				
 				std::string str((std::istreambuf_iterator<char>(stream)), std::istreambuf_iterator<char>());
-				std::cout << str << std::endl;
 				
 				return str;
 			}
