@@ -145,6 +145,14 @@ TEST(StringTests, TestInitializationFromLongDouble) {
 }
 
 
+TEST(StringTests, TestValueOfCopy) {
+    String value1 = "Value";
+	String value2 = *value1 + "2";
+    ASSERT_EQ(value1, "Value");
+	ASSERT_EQ(value2, "Value2");
+}
+
+
 TEST(StringTests, TestAssignmentFromCStringValue) {
     String value = "";
 	value = "value";
@@ -1109,6 +1117,13 @@ TEST(StringTests, TestComparisonEQLongDouble) {
 }
 
 
+
+TEST(StringTests, TestCopy) {
+    String value1 = "Value";
+	String value2 = value1.copy() + "2";
+    ASSERT_EQ(value1, "Value");
+	ASSERT_EQ(value2, "Value2");
+}
 
 TEST(StringTests, TestLowercase) {
     String value = "Value";

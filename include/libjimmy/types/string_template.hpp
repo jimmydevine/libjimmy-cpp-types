@@ -186,6 +186,22 @@ namespace libjimmy::types {
 			
 			
 			/***********************************************************************************************************************
+			* operator*()
+			*
+			* Arguments
+			*
+			* Description
+			*   Return a copy of the string
+			*
+			* Return StringTemplate&
+			*   Return a copy of the string
+			***********************************************************************************************************************/
+			StringTemplate operator*() {
+				return this->copy();
+			}
+			
+			
+			/***********************************************************************************************************************
 			* operator=(const std::basic_string<T>& _value)
 			*
 			* Arguments
@@ -3093,8 +3109,24 @@ namespace libjimmy::types {
 			friend bool operator==(const long double lhs, const StringTemplate& rhs) {
 				return lhs == (long double)rhs;
 			}
-	
-	
+			
+			
+			
+			/***********************************************************************************************************************
+			* copy()
+			*
+			* Arguments
+			*
+			* Description
+			*   Return a copy of the string
+			*
+			* Return a copy of the string
+			***********************************************************************************************************************/
+			StringTemplate copy() {
+				return StringTemplate(*this);
+			}
+			
+			
 			/***********************************************************************************************************************
 			* minimizeFloatPrecision()
 			*
