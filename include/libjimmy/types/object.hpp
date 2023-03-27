@@ -3,6 +3,7 @@
 
 
 #include <map>
+#include "bool.hpp"
 
 
 
@@ -32,7 +33,9 @@ namespace libjimmy::types {
 			***********************************************************************************************************************/
 			using std::map<K, V>::map;
 			
-			
+			Bool has(K key) {
+				return (this->find(key) != this->end());
+			}
 	};
 		
 		

@@ -1,5 +1,5 @@
 cmake_minimum_required (VERSION 3.0)
-project (libjimmy-cpp-types VERSION 0.0.11)
+project (libjimmy-cpp-types VERSION 0.0.12)
 
 set (CMAKE_CXX_STANDARD 17)
 
